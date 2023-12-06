@@ -1,0 +1,9 @@
+on:
+   push
+
+jobs:
+    echo-job:
+        runs-on: [prod,main,self-hosted,Linux,X64]
+        steps:
+            - name: Print date
+              run: date
